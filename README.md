@@ -8,6 +8,14 @@ Alfred(Mac App) Workflow - Bookmark manager using Ruby
 create.rb -> create new bookmark
 search.rb -> search bookmark by title, url
 
+## How to Use
+
+**Prerequisite.** Alfed app is required
+
+1. Download release
+2. unpack file
+3. Double click the file
+
 ## How to Edit and Export
 1. import Workflow to Alfred
 2. Edit Workflow
@@ -31,3 +39,7 @@ create table urls
 create unique index urls_url_uindex
     on urls (url);
 ```
+
+## Workflow Screenshot
+
+![workflow-screenshot](./workflow-screenshot.jpg)
