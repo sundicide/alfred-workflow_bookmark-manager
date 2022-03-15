@@ -6,7 +6,7 @@ require 'json'
 db = SQLite3::Database.open 'bookmarks.sqlite'
 db.results_as_hash = true
 
-select_query = "SELECT * FROM urls WHERE title LIKE '%" + query.to_s + "%' OR url LIKE '%" + query.to_s + "%';"
+select_query = "SELECT * FROM urls WHERE title LIKE '%" + query.to_s + "%' OR url LIKE '%" + query.to_s + "%' ORDER BY added_date DESC;"
 
 results = db.execute(select_query)
 
